@@ -4,10 +4,9 @@ const ProductsSchema = new mongoose.Schema({
     title: {type: String, required: true},
     price:{type: String, required: true},
     username: {type: String, required: true},
-    details:{type: String, required: true},
     description: {type: String, required: true},
 
-})
+});
 
 
 module.exports = mongoose.model("Product", ProductsSchema)
