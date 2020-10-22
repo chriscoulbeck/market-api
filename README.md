@@ -12,11 +12,6 @@ npm install
 npm run dev
 ```
 
-### Contributing
-1. Do not commit directly to master, commit to alternate branches with the name of particular feature 
-2. Format code with Prettier
-3. Lower case commit messages
-
 ### Connecting to your database
 
 1. Create a mongoDB database
