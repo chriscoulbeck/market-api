@@ -1,6 +1,10 @@
 const router = require("express").Router();
 const Product = require("../models/Product");
 const Comment = require("../models/Comment");
+
+const { Mongoose } = require("mongoose");
+
+
    
 router.get("/", (req, res, next) => {
     Product.find({})
@@ -39,6 +43,7 @@ router.put("/:id", (req, res, next) => {
 
 // Post Product
 router.post("/", (req, res, next) => {
+  console.log(req.file)
   const product = new Product(req.body);
   product.save().then((result) => {
     res.status(201).send(result);

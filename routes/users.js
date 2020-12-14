@@ -9,15 +9,15 @@ router.get("/", (req, res) => {
 router.post("/", function (req, res, next) {
   console.log("POST recieved")
   //server-side validation
-  if (!req.body.firstname) {
-    return res.status(422).send("First name can't be blank");
-  }
-  if (!req.body.lastname) {
-    return res.status(422).send("Last name can't be blank");
-  }
-  if (!req.body.username) {
-    return res.status(422).send("Username can't be blank");
-  }
+  // if (!req.body.firstname) {
+  //   return res.status(422).send("First name can't be blank");
+  // }
+  // if (!req.body.lastname) {
+  //   return res.status(422).send("Last name can't be blank");
+  // }
+  // if (!req.body.username) {
+  //   return res.status(422).send("Username can't be blank");
+  // }
   if (!req.body.email) {
     return res.status(422).send("Email can't be blank");
   }
